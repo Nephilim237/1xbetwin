@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
+:root {
+	--cc-primary: #4ca771;
+	--cc-secondary: #c0e6ba;
+	--cc-dark: #013237;
+	--cc-light: #eaf9ef;
+	--cc-white: #eaf1f5;
+	--cc-black: #232323;
+	--test: rgba(1, 50, 55, 0.709);
+}
+
+.sairaStencil {
+	font-family: 'Saira Stencil One', cursive;
+}
+.redressed {
+	font-family: 'Redressed', cursive;
+}
+.lato {
+	font-family: 'Lato', sans-serif;
+}
+
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	background-color: #f1f7f7;
+	color: var(--cc-dark);
+	letter-spacing: initial;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
+	text-transform: initial;
+}
+
+/* ===== Common styles zone ===== */
+
+p .btn {
+	margin-top: 1rem;
+}
+.cc-mini-title {
+	padding-left: 24px;
+}
+
+.cc-1xbet {
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: -1.5px;
+	margin-right: 10px;
+}
+
+.cc-1xbet .cc-1xbet-sec-part {
+	color: #0781d2;
+}
+
+.cc-promo-code {
+	font-size: 32px;
+	/* color: var(--cc-primary); */
+}
+
+.cc-telegram {
+	color: #0781d2;
+}
+/* ===== End common styles zone ===== */
+
+
+/* ===== Navbar Zone ===== */
+
+.cc-navbar {
+	text-transform: initial;
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: var(--cc-primary);
+}
+
+.cc-navbar .navbar-brand, .cc-navbar .nav-link {
+	color: var(--cc-light);
+}
+.cc-navbar .nav-link {
+	font-size: 18px;
+}
+
+.cc-navbar .nav-link:hover {
+	color: var(--cc-dark);
+}
+
+#cc-logo {
+	font-family: 'Redressed', cursive;
+	font-size: 32px;
+}
+
+#cc-logo i {
+	color: goldenrod;
+}
+
+#logoMoney {
+	font-size: 48px;
+	color: goldenrod;
+}
+
+@media (max-width: 800px) {
+	#cc-logo {
+		font-size: 24px;
+	}
+}
+
+/* ===== End Navbar zone ===== */
+
+/* ===== Banner zone ===== */
+.cc-banner {
+	background-color: var(--cc-white);
+	color: var(--cc-dark);
+}
+.cc-banner-title {
+	font-size: 48px;
+	margin-bottom: 16px;
+	color: var(--cc-primary);
+}
+
+.cc-desc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.cc-card-presentation {
+	background-color: var(--cc-light);
+	padding: 24px;
+	margin-bottom: 24px;
+	font-size: 18px;
+	line-height: 40px;
+	border-radius: 24px;
+	box-shadow: 0 4px 8px rgba(1, 50, 55, 0.15), 0 4px 4px rgba(1, 50, 55, 0.25);
+}
+
+.cc-card-presentation img {
+	border-radius: 12px;
+}
+/* ===== End Banner zone ===== */
+
+
+/* ===== Marquee zone ===== */
+.cc-marquee {
+	background-color: var(--cc-dark);
+	color: var(--cc-light);
+	font-size: 18px;
+	font-weight: 700;
+	border-bottom: 1px solid var(--cc-white);
+}
+/* ===== End Marquee zone ===== */
+
+/* ===== Conditions Zone ==== */
+
+.cc-game-desc {
+	min-height: 800px;
+}
+
+.cc-list {
+	padding: 0 12px;
+}
+
+.cc-game-desc ol, .cc-game-desc ul {
+	padding-left: 0;
+	list-style-position: inside;
+}
+
+.cc-game-desc .nav-tabs {
+	border-bottom: 1px solid var(--cc-dark);
+}
+
+.cc-game-desc .nav-tabs .nav-link.active {
+	color: var(--cc-light);
+	background-color: var(--cc-dark);
+	border-color: var(--cc-dark);
+}
+
+.cc-game-desc .nav-tabs .nav-link:hover {
+	border: 1px solid var(--cc-light);
+	background-color: var(--cc-primary);
+	color: var(--cc-white);
+}
+
+.cc-game-desc #myConditions {
+	padding-left: 24px;
+	/* border-left: 1px solid var(--cc-dark); */
+}
+
+/* ===== End Conditions zone ===== */
+
+
+/* ===== Footer zone ===== */
+.cc-footer  {
+	background-color: var(--cc-dark);
+}
+
+.cc-footer h6 {
+	font-size: 18px;
+	color: var(--cc-light);
+}
+
+.cc-footer ul {
+	list-style-type: none;
+	padding-left: 12px;
+}
+
+.cc-footer a {
+	text-decoration: none;
+	color: var(--cc-light);
+	/* font-size: 16px; */
+	font-weight: 700;
+	transition: color .3s;
+}
+
+.cc-footer a:hover {
+	color: var(--cc-primary);
+}
+/* ===== End footer zone ===== */
+
+
+
+
+/* ====== Button zone ===== */
+.cc-btn-dark {
+	background-color: var(--cc-dark);
+	color: var(--cc-secondary);
+}
+
+.cc-btn-dark:hover {
+	background-color: var(--cc-secondary);
+	color: var(--cc-dark);
+}
+
+.cc-btn-primary {
+	background-color: var(--cc-primary);
+	color: var(--cc-white);
+}
+
+.cc-btn-primary:hover {
+	background-color: var(--cc-white);
+	color: var(--cc-primary);
+}
+
+.btn .fa-brands {
+	vertical-align: middle;
+}
