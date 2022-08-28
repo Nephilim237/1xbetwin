@@ -32,6 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
 	text-transform: initial;
+	letter-spacing: initial;
 }
 
 /* ===== Common styles zone ===== */
@@ -39,9 +40,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
 p .btn {
 	margin-top: 1rem;
 }
-.cc-mini-title {
+
+/* .cc-mini-title {
 	padding-left: 24px;
-}
+} */
 
 .cc-1xbet {
 	font-size: 16px;
@@ -118,6 +120,17 @@ p .btn {
 	color: var(--cc-primary);
 }
 
+@media (max-width: 600px) {
+	.cc-banner-title {
+		font-size: 32px;
+	}
+}
+
+.cc-banner iframe {
+	width: 100%;
+	height: 100%;
+}
+
 .cc-desc {
 	display: flex;
 	align-items: center;
@@ -132,6 +145,18 @@ p .btn {
 	line-height: 40px;
 	border-radius: 24px;
 	box-shadow: 0 4px 8px rgba(1, 50, 55, 0.15), 0 4px 4px rgba(1, 50, 55, 0.25);
+}
+
+@media (max-width: 600px) {
+	.cc-card-presentation {
+		font-size: 16px;
+		line-height: 32px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 32px;
+	}
 }
 
 .cc-card-presentation img {
@@ -156,13 +181,18 @@ p .btn {
 	min-height: 800px;
 }
 
-.cc-list {
+/* .cc-list {
 	padding: 0 12px;
-}
+} */
 
-.cc-game-desc ol, .cc-game-desc ul {
+.cc-game-desc ol {
 	padding-left: 0;
 	list-style-position: inside;
+}
+
+.cc-game-desc ul.cc-game-desc-ul {
+	list-style-position: inside;
+	list-style-type: none;
 }
 
 .cc-game-desc .nav-tabs {
@@ -181,10 +211,10 @@ p .btn {
 	color: var(--cc-white);
 }
 
-.cc-game-desc #myConditions {
+/* .cc-game-desc #myConditions {
 	padding-left: 24px;
-	/* border-left: 1px solid var(--cc-dark); */
-}
+	border-left: 1px solid var(--cc-dark);
+} */
 
 /* ===== End Conditions zone ===== */
 
