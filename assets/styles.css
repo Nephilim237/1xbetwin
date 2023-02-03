@@ -2,43 +2,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 
 :root {
-	--cc-primary: #4ca771;
-	--cc-secondary: #c0e6ba;
-	--cc-dark: #013237;
-	--cc-light: #eaf9ef;
-	--cc-white: #eaf1f5;
-	--cc-black: #232323;
-	--test: rgba(1, 50, 55, 0.709);
+    --cc-primary: #4ca771;
+    --cc-1win-primary: #1a2439;
+    --cc-1win-secondary: #268bea;
+    --cc-secondary: #c0e6ba;
+    --cc-dark: #013237;
+    --cc-light: #eaf9ef;
+    --cc-white: #eaf1f5;
+    --cc-black: #232323;
+    --test: rgba(1, 50, 55, 0.709);
 }
 
 .sairaStencil {
-	font-family: 'Saira Stencil One', cursive;
+    font-family: 'Saira Stencil One', cursive;
 }
 .redressed {
-	font-family: 'Redressed', cursive;
+    font-family: 'Redressed', cursive;
 }
 .lato {
-	font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
+.bet-primary {
+    background-color: var(--cc-primary);
+}
+
+.bet-secondary {
+    background-color: var(--cc-secondary);
+}
+
+.bet-dark {
+    background-color: var(--cc-dark);
+}
+
+.win-primary {
+    background-color: var(--cc-1win-primary);
+}
+
+.win-secondary {
+    background-color: var(--cc-1win-secondary);
+}
+
+.text-bet-primary {
+    color: var(--cc-primary);
+}
+
+.text-bet-secondary {
+    color: var(--cc-secondary);
+}
+
+.text-win-primary {
+    color: var(--cc-1win-primary);
+}
+
+.text-win-secondary {
+    color: var(--cc-1win-secondary);
+}
 
 body {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	background-color: #f1f7f7;
-	color: var(--cc-dark);
-	letter-spacing: initial;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: #f1f7f7;
+    color: var(--cc-dark);
+    letter-spacing: initial;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
-	text-transform: initial;
-	letter-spacing: initial;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.btn {
+    text-transform: initial;
+    letter-spacing: initial;
 }
 
 /* ===== Common styles zone ===== */
 
 p .btn {
-	margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 /* .cc-mini-title {
@@ -46,139 +95,151 @@ p .btn {
 } */
 
 .cc-1xbet {
-	font-size: 16px;
-	font-weight: 900;
-	letter-spacing: -1.5px;
-	margin-right: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    margin-right: 10px;
 }
 
 .cc-1xbet .cc-1xbet-sec-part {
-	color: #0781d2;
+    color: #0781d2;
 }
 
 .cc-promo-code {
-	font-size: 32px;
-	/* color: var(--cc-primary); */
+    font-size: 32px;
+    /* color: var(--cc-primary); */
 }
 
 .cc-telegram {
-	color: #0781d2;
+    color: #0781d2;
 }
 /* ===== End common styles zone ===== */
 
-
 /* ===== Navbar Zone ===== */
 
-.cc-navbar {
-	text-transform: initial;
-	padding-top: 0;
-	padding-bottom: 0;
-	background-color: var(--cc-primary);
+.navbar {
+    text-transform: initial;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.cc-navbar .navbar-brand, .cc-navbar .nav-link {
-	color: var(--cc-light);
-}
-.cc-navbar .nav-link {
-	font-size: 18px;
+.cc-navbar-xbet {
+    background-color: var(--cc-primary);
 }
 
-.cc-navbar .nav-link:hover {
-	color: var(--cc-dark);
+.cc-navbar-win {
+    background-color: var(--cc-1win-primary);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar.xbet .navbar-brand,
+.navbar-win .nav-link,
+.navbar.xbet .navbar-brand,
+.navbar-win .nav-link {
+    color: var(--cc-light);
+}
+.navbar .nav-link {
+    font-size: 18px;
+}
+
+.navbar .nav-link:hover {
+    color: var(--cc-1win-secondary);
 }
 
 #cc-logo {
-	font-family: 'Redressed', cursive;
-	font-size: 32px;
+    font-family: 'Redressed', cursive;
+    font-size: 32px;
 }
 
 #cc-logo i {
-	color: goldenrod;
+    color: goldenrod;
 }
 
 #logoMoney {
-	font-size: 48px;
-	color: goldenrod;
+    font-size: 48px;
+    color: goldenrod;
 }
 
 @media (max-width: 800px) {
-	#cc-logo {
-		font-size: 24px;
-	}
+    #cc-logo {
+        font-size: 24px;
+    }
 }
 
 /* ===== End Navbar zone ===== */
 
 /* ===== Banner zone ===== */
 .cc-banner {
-	background-color: var(--cc-white);
-	color: var(--cc-dark);
+    background-color: var(--cc-white);
+    color: var(--cc-dark);
 }
 .cc-banner-title {
-	font-size: 48px;
-	margin-bottom: 16px;
-	color: var(--cc-primary);
+    font-size: 48px;
+    margin-bottom: 16px;
+    /* color: var(--cc-primary); */
 }
 
 @media (max-width: 600px) {
-	.cc-banner-title {
-		font-size: 32px;
-	}
+    .cc-banner-title {
+        font-size: 32px;
+    }
 }
 
 iframe {
-	width: 100%;
-	/* height: 100%; */
+    width: 100%;
+    /* height: 100%; */
 }
 
 .cc-desc {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .cc-card-presentation {
-	background-color: var(--cc-light);
-	padding: 24px;
-	margin-bottom: 24px;
-	font-size: 18px;
-	line-height: 40px;
-	border-radius: 4px;
-	box-shadow: 0 4px 8px rgba(1, 50, 55, 0.15), 0 1px 1px rgba(1, 50, 55, 0.25);
+    /* background-color: var(--cc-light); */
+    padding: 24px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 40px;
+    border-radius: 4px;
+    box-shadow: 0 4px 24px rgba(1, 50, 55, 0.15),
+        0 1px 24px rgba(1, 50, 55, 0.25);
 }
 
 @media (max-width: 600px) {
-	.cc-card-presentation {
-		font-size: 16px;
-		line-height: 32px;
-	}
+    .cc-card-presentation {
+        font-size: 16px;
+        line-height: 32px;
+    }
 
-	p {
-		font-size: 16px;
-		line-height: 32px;
-	}
+    p {
+        font-size: 16px;
+        line-height: 32px;
+    }
 }
 
 .cc-card-presentation img {
-	border-radius: 12px;
+    border-radius: 12px;
 }
 /* ===== End Banner zone ===== */
 
-
 /* ===== Marquee zone ===== */
 .cc-marquee {
-	background-color: var(--cc-dark);
-	color: var(--cc-light);
-	font-size: 18px;
-	font-weight: 700;
-	border-bottom: 1px solid var(--cc-white);
+    /* background-color: var(--cc-dark); */
+    color: var(--cc-light);
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--cc-white);
 }
 /* ===== End Marquee zone ===== */
 
 /* ===== Conditions Zone ==== */
 
 .cc-game-desc {
-	min-height: 800px;
+    /* min-height: 800px; */
 }
 
 /* .cc-list {
@@ -186,29 +247,29 @@ iframe {
 } */
 
 .cc-game-desc ol {
-	padding-left: 0;
-	list-style-position: inside;
+    padding-left: 0;
+    list-style-position: inside;
 }
 
 .cc-game-desc ul.cc-game-desc-ul {
-	list-style-position: inside;
-	list-style-type: none;
+    list-style-position: inside;
+    list-style-type: none;
 }
 
 .cc-game-desc .nav-tabs {
-	border-bottom: 1px solid var(--cc-dark);
+    border-bottom: 1px solid var(--cc-dark);
 }
 
 .cc-game-desc .nav-tabs .nav-link.active {
-	color: var(--cc-light);
-	background-color: var(--cc-dark);
-	border-color: var(--cc-dark);
+    color: var(--cc-light);
+    background-color: var(--cc-dark);
+    border-color: var(--cc-dark);
 }
 
 .cc-game-desc .nav-tabs .nav-link:hover {
-	border: 1px solid var(--cc-light);
-	background-color: var(--cc-primary);
-	color: var(--cc-white);
+    border: 1px solid var(--cc-light);
+    background-color: var(--cc-primary);
+    color: var(--cc-white);
 }
 
 /* .cc-game-desc #myConditions {
@@ -218,59 +279,75 @@ iframe {
 
 /* ===== End Conditions zone ===== */
 
-
 /* ===== Footer zone ===== */
-.cc-footer  {
-	background-color: var(--cc-dark);
+.cc-footer {
+    /* background-color: var(--cc-dark); */
 }
 
 .cc-footer h6 {
-	font-size: 18px;
-	color: var(--cc-light);
+    font-size: 18px;
+    color: var(--cc-light);
 }
 
 .cc-footer ul {
-	list-style-type: none;
-	padding-left: 12px;
+    list-style-type: none;
+    padding-left: 12px;
 }
 
 .cc-footer a {
-	text-decoration: none;
-	color: var(--cc-light);
-	/* font-size: 16px; */
-	font-weight: 700;
-	transition: color .3s;
+    text-decoration: none;
+    color: var(--cc-light);
+    /* font-size: 16px; */
+    font-weight: 700;
+    transition: color 0.3s;
 }
 
 .cc-footer a:hover {
-	color: var(--cc-primary);
+    color: var(--cc-primary);
 }
 /* ===== End footer zone ===== */
 
-
-
-
 /* ====== Button zone ===== */
-.cc-btn-dark {
-	background-color: var(--cc-dark);
-	color: var(--cc-secondary);
+.cc-btn-bet-dark {
+    background-color: var(--cc-dark);
+    color: var(--cc-secondary);
 }
 
-.cc-btn-dark:hover {
-	background-color: var(--cc-secondary);
-	color: var(--cc-dark);
+.cc-btn-bet-dark:hover {
+    background-color: var(--cc-secondary);
+    color: var(--cc-dark);
 }
 
-.cc-btn-primary {
-	background-color: var(--cc-primary);
-	color: var(--cc-white);
+.cc-btn-bet-primary {
+    background-color: var(--cc-primary);
+    color: var(--cc-white);
 }
 
-.cc-btn-primary:hover {
-	background-color: var(--cc-white);
-	color: var(--cc-primary);
+.cc-btn-bet-primary:hover {
+    background-color: var(--cc-white);
+    color: var(--cc-primary);
+}
+
+.cc-btn-win-dark {
+    background-color: var(--cc-1win-primary);
+    color: var(--cc-light);
+}
+
+.cc-btn-win-dark:hover {
+    background-color: var(--cc-1win-secondary);
+    color: var(--cc-white);
+}
+
+.cc-btn-win-primary {
+    background-color: var(--cc-1win-secondary);
+    color: var(--cc-white);
+}
+
+.cc-btn-win-primary:hover {
+    background-color: var(--cc-white);
+    color: var(--cc-1win-primary);
 }
 
 .btn .fa-brands {
-	vertical-align: middle;
+    vertical-align: middle;
 }
